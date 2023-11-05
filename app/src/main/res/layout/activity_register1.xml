@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:orientation="vertical"
+    tools:context=".Register_1">
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="24dp"
+        android:background="@drawable/backbtn"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/backBtn"
+        android:contentDescription="@string/back_button"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:textSize="45sp"
+        android:id="@+id/email"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "32dp"
+        android:background="@drawable/rectangle_2"
+        android:id="@+id/mail"
+        android:hint="@string/mail_example"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "32dp"
+        android:background="@drawable/rectangle_2"
+        android:id="@+id/pass"
+        android:passwordToggleEnabled="true"
+        android:hint="@string/password_example"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "32dp"
+        android:background="@drawable/rectangle_3"
+        android:id="@+id/nextBtn"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginRight="16dp"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
