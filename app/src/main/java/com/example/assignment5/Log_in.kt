@@ -20,10 +20,12 @@ class Log_in : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.backBtn.setOnClickListener{
+        val mail = binding.mail
+        val pass = binding.passwordToggle
+
+        binding.backBtn.setOnClickListener {
             val intentbackBtn = Intent(this, MainActivity::class.java)
             startActivity(intentbackBtn)
         }
-        setContentView(R.layout.activity_main)
     }
 }

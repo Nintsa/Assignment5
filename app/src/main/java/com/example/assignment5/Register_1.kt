@@ -28,10 +28,17 @@ class Register_1 : AppCompatActivity() {
             startActivity(intentNextBtn)
         }
 
+        val mail = binding.mail
+        val pass = binding.pass
+
         binding.backBtn.setOnClickListener{
-            finish()
+            val intentbackBtn = Intent(this, MainActivity::class.java)
+            startActivity(intentbackBtn)
         }
 
-        setContentView(R.layout.activity_register1)
+        binding.nextBtn.setOnClickListener{
+            var intent2nd = Intent(this, Register_2::class.java)
+            startActivity(intent2nd)
+        }
     }
 }
